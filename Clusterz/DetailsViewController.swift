@@ -17,12 +17,14 @@ class DetailsViewController: UIViewController {
     }
     
     @IBOutlet weak var text: UILabel!
+    @IBOutlet weak var thumbnailImage: UIImageView!
 
-    
     var clusterName = String()
+    var clusterImage = UIImage()
     
     override func viewWillAppear(animated: Bool) {
         text.text = clusterName
+        thumbnailImage.image = clusterImage
     }
     
     /*

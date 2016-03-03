@@ -128,7 +128,11 @@ class ClusterTableViewController: UITableViewController {
         if (segue.identifier! == "showDetails") {
             if let destination = segue.destinationViewController as? DetailsViewController {
                 if let index = tableView.indexPathForSelectedRow?.row {
-                    destination.clusterName = "Pressed \(index)"
+
+                    let cluster = self.clusters[index]
+
+                    destination.clusterImage = cluster.image
+                    destination.clusterName = cluster.name
                 }
             }
         }
