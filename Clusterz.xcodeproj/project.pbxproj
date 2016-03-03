@@ -12,6 +12,9 @@
 		971D37101C81AEB800E969F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 971D370E1C81AEB800E969F9 /* Main.storyboard */; };
 		971D37121C81AEB800E969F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 971D37111C81AEB800E969F9 /* Assets.xcassets */; };
 		971D37151C81AEB800E969F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 971D37131C81AEB800E969F9 /* LaunchScreen.storyboard */; };
+		971D371D1C81BAAB00E969F9 /* ClusterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971D371C1C81BAAB00E969F9 /* ClusterTableViewController.swift */; };
+		971D371F1C8343E700E969F9 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971D371E1C8343E700E969F9 /* DetailsViewController.swift */; };
+		971D37231C84E53F00E969F9 /* ClusterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971D37221C84E53F00E969F9 /* ClusterTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		971D37111C81AEB800E969F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		971D37141C81AEB800E969F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		971D37161C81AEB800E969F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		971D371C1C81BAAB00E969F9 /* ClusterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClusterTableViewController.swift; sourceTree = "<group>"; };
+		971D371E1C8343E700E969F9 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		971D37221C84E53F00E969F9 /* ClusterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClusterTableViewCell.swift; path = ../ClusterTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,9 @@
 				971D370A1C81AEB800E969F9 /* AppDelegate.swift */,
 				971D370C1C81AEB800E969F9 /* ViewController.swift */,
 				971D370E1C81AEB800E969F9 /* Main.storyboard */,
+				971D371C1C81BAAB00E969F9 /* ClusterTableViewController.swift */,
+				971D37221C84E53F00E969F9 /* ClusterTableViewCell.swift */,
+				971D371E1C8343E700E969F9 /* DetailsViewController.swift */,
 				971D37111C81AEB800E969F9 /* Assets.xcassets */,
 				971D37131C81AEB800E969F9 /* LaunchScreen.storyboard */,
 				971D37161C81AEB800E969F9 /* Info.plist */,
@@ -96,6 +105,7 @@
 				TargetAttributes = {
 					971D37061C81AEB800E969F9 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 8C6DC93A64;
 					};
 				};
 			};
@@ -135,8 +145,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				971D37231C84E53F00E969F9 /* ClusterTableViewCell.swift in Sources */,
 				971D370D1C81AEB800E969F9 /* ViewController.swift in Sources */,
+				971D371D1C81BAAB00E969F9 /* ClusterTableViewController.swift in Sources */,
 				971D370B1C81AEB800E969F9 /* AppDelegate.swift in Sources */,
+				971D371F1C8343E700E969F9 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,10 +260,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Clusterz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.look.Clusterz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -258,10 +274,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Clusterz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.look.Clusterz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
